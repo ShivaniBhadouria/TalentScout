@@ -1,7 +1,6 @@
 # 🌟 TalentScout - AI Hiring Assistant 🤖
 
-Welcome to **TalentScout**, an AI-powered Hiring Assistant chatbot designed to streamline technical interviews and automate candidate screening. This project leverages **LLMs, NLP, and customized prompts** to ensure accurate and efficient assessments of technical skills. LIVE LINK: https://ai-chatbot-geq8bs4qnrsk92vswjg3yj.streamlit.app/
-
+Welcome to **TalentScout**, an AI-powered Hiring Assistant chatbot designed to streamline technical interviews and automate candidate screening. This project leverages **LLMs, NLP, and customized prompts** to ensure accurate and efficient assessments of technical skills. LIVE LINK: https://talentscoutblaze.streamlit.app/
 ---
 
 ## 📌 Features
