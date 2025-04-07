@@ -19,6 +19,7 @@ def initialize_session_state():
             "full_name": None,
             "email": None,
             "phone": None,
+            "qualifications": None,  # Added qualification field
             "years_of_experience": None,
             "desired_position": None,
             "current_location": None,
@@ -68,6 +69,10 @@ def is_valid_experience(experience):
 def is_valid_location(location):
     return isinstance(location, str) and location.strip() != ""
 
+# Function to validate qualifications
+def is_valid_qualifications(qualifications):
+    return isinstance(qualifications, str) and qualifications.strip() != ""
+
 # Function to handle user input while maintaining conversation context
 def handle_user_input(user_input):
     st.session_state.messages.append({"role": "user", "content": user_input})
@@ -92,9 +97,15 @@ def handle_user_input(user_input):
     elif not candidate_info["phone"]:
         if is_valid_phone(user_input):
             candidate_info["phone"] = user_input
-            bot_response = "Great! How many years of experience do you have?"
+            bot_response = "Great! Please tell me about your educational qualifications and certifications."
         else:
             bot_response = "Please enter a valid 10-digit phone number."
+    elif not candidate_info["qualifications"]:
+        if is_valid_qualifications(user_input):
+            candidate_info["qualifications"] = user_input
+            bot_response = "Thank you for sharing your qualifications. How many years of experience do you have?"
+        else:
+            bot_response = "Please provide details about your educational qualifications."
     elif not candidate_info["years_of_experience"]:
         if is_valid_experience(user_input):
             candidate_info["years_of_experience"] = user_input
