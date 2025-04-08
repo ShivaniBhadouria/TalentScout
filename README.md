@@ -82,4 +82,4 @@ This project is licensed under the **MIT License**.
 
 ---
 
-🔹 **Developed with ❤️ by Ankur Bhadauria** 🔹
+🔹 **Developed with ❤️ by Shivani Bhadouria** 🔹
